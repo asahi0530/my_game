@@ -40,7 +40,7 @@ def stage_data():
         [9, 0, 0, 0, 9, 0, 0, 0, 0, 9],
         [9, 9, 9, 9, 9, 9, 9, 9, 9, 9], 
         ]
-        pg.mixer.music.load("waterblue.mp3")
+        pg.mixer.music.load("my_game-main./waterblue.mp3")
         pg.mixer.music.play(-1)
     if stage == 2:
         ix = 8
@@ -55,7 +55,7 @@ def stage_data():
         [9, 0, 0, 9, 0, 0, 0, 9, 0, 9],
         [9, 9, 9, 9, 9, 9, 9, 9, 9, 9],    
         ]
-        pg.mixer.music.load("marbletechno1.mp3")
+        pg.mixer.music.load("my_game-main./marbletechno1.mp3")
         pg.mixer.music.play(-1)
     if stage == 3:
         ix = 3
@@ -70,7 +70,7 @@ def stage_data():
         [9, 9, 0, 0, 0, 0, 0, 9, 9, 9],
         [9, 9, 9, 9, 9, 9, 9, 9, 9, 9],    
         ]
-        pg.mixer.music.load("marbletechno2.mp3")
+        pg.mixer.music.load("my_game-main./marbletechno2.mp3")
         pg.mixer.music.play(-1)
     if stage == 4:
         ix = 4
@@ -85,7 +85,7 @@ def stage_data():
         [9, 0, 0, 0, 0, 0, 0, 0, 0, 9],
         [9, 9, 9, 9, 9, 9, 9, 9, 9, 9],    
         ]
-        pg.mixer.music.load("tsukitoiruka.mp3")
+        pg.mixer.music.load("my_game-main./tsukitoiruka.mp3")
         pg.mixer.music.play(-1)
     if stage == 5:
         ix = 1
@@ -100,7 +100,7 @@ def stage_data():
         [9, 0, 0, 0, 0, 0, 0, 0, 0, 9],
         [9, 9, 9, 9, 9, 9, 9, 9, 9, 9],    
         ]
-        pg.mixer.music.load("waterblue.mp3")
+        pg.mixer.music.load("my_game-main./waterblue.mp3")
         pg.mixer.music.play(-1)
     maze[iy][ix] = 1
     
@@ -193,7 +193,7 @@ root.bind("<KeyPress>", key_down)
 root.bind("<KeyRelease>", key_up)
 cvs = tkinter.Canvas(root, width = 800, height = 640)
 cvs.pack()
-pen = tkinter.PhotoImage(file = "ペン.png")
-wall = tkinter.PhotoImage(file = "壁.png")
+pen = tkinter.PhotoImage(file = "my_game-main./ペン.png")
+wall = tkinter.PhotoImage(file = "my_game-main./壁.png")
 game_main()
 root.mainloop()
